@@ -1,0 +1,247 @@
+
+@font-face {
+    font-family: 'gilroy-extrabold';
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 17%;
+  background: linear-gradient(to right, #828282, #e3e3e3, #828282);
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  font: 1em/0.7 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: solid 1px black;
+  box-shadow:  0px 0px 5px 2px white;
+}
+
+/* link */
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color:black;
+}
+
+/* ul/ol */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* h1/2/3/4/5/6 */
+
+h1,
+h2 {
+  font-family: 'gilroy-extrabold', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0px 0px 10px 10px;
+  color: white;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+}
+
+/* -------classes---------- */
+
+.debug {
+  border: solid red 2px;
+}
+
+.menu-top {
+  background-color: #ec8c1a;
+  padding: 10px 2%;
+  font-family: 'gilroy-extrabold', Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.menu-top li {
+  display: inline-table;
+  list-style-type: none;
+}
+
+.menu-top-link {
+    padding: 7px 3px 7px 7px;
+    transition: background-color .5s;
+}
+
+.menu-top-link:hover {
+    background-color: #ffab47;
+}
+
+.main-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  background: white;
+  text-align: center;
+}
+
+.primary,
+.secondary {
+  width: 49%;
+  padding: 10px 20px;
+  margin: 40px 0 10px 0;
+  min-height: 300px;
+  border: solid 1px black;
+  box-shadow:  0px 0px 5px 2px white;
+
+  /* ------------------
+
+   margin: 70px  45px 25px 45px;
+  background: linear-gradient(to bottom, #ec8c1a 64px, white 64px);
+  border-radius: 0px 0px 20px 20px;
+  border: solid 2px #757373;
+  box-shadow:  0px 0px 2px 1px white;
+
+  -------------- stare ramki ----------*/
+}
+
+.primary {
+  float: left;
+  background: linear-gradient(#ec8c1a 64px, white 10px, transparent 150%);
+}
+
+.secondary {
+  float: right;
+  background: linear-gradient(#ec8c1a 64px, white 1px , transparent 170%),
+              grey url('../images/tlo-service.jpg') no-repeat center;
+}
+
+.secondary-link {
+  text-align: right;
+  padding: 3px 5px 3px 3px;
+  margin: 0 25px 10px 72%;
+  font-size: 1.2rem;
+  background: white;
+  border-radius: 8px;
+  border: solid 1px black;
+  max-width: 138px;
+}
+
+.images {
+  padding: 10px 20px;
+  margin-top: 30px;
+  background: linear-gradient(#ec8c1a 64px, white 10px, transparent 150%);
+  border: solid 1px black;
+  box-shadow:  0px 0px 5px 2px white;
+}
+
+.images-link {
+  text-align: right;
+  padding: 3px 5px 3px 3px;
+  margin: 0 25px 10px 88%;
+  font-size: 1.2rem;
+  max-width: 120px;
+  background: white;
+  border-radius: 8px;
+  border: solid 1px black;
+}
+
+.main-footer {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.main-footer-contact {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.main-footer-contact a {
+  margin: 0 30px;
+}
+
+.copyrights {
+  text-align: center;
+  font-size: 0.75rem;
+  border-top: solid 2px #919190;
+  padding-top: 5px;
+}
+
+/* -------- Social Media Footer ----------*/
+
+.style-fb,
+.style-i,
+.style-g {
+  padding: 20px;
+  font-size: 30px;
+  width: 56px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow:  0px 0px 5px 4px white;
+  transition: all .2s ease-in-out;
+}
+
+.style-fb:hover,
+.style-i:hover,
+.style-g:hover {
+  opacity: 0.7;
+  box-shadow:  0px 0px 10px 8px white;
+  transform: scale(1.15);
+}
+
+.style-fb {
+  background: #3B5998;
+  color: white;
+}
+
+.style-i {
+  background: #125688;
+  color: white;
+}
+
+.style-g {
+  background: #dd4b39;
+  color: white;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Media Queries --------------------- */
+
+@media (max-width: 1024px) {
+  .primary,
+  .secondary {
+    float: none;
+    width: 100%;
+  }
+  .secondary-link,
+  .images-link {
+  margin-left: 73%;
+  }
+  body {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 720px) {
+  .secondary-link,
+  .images-link {
+  margin-left: 33%;
+}
