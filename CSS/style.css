@@ -11,16 +11,16 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 17%;
-  background: linear-gradient(to right, #828282, #e3e3e3, #828282);
-  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 header {
   font: 1em/0.7 "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: solid 1px black;
   box-shadow:  0px 0px 5px 2px white;
+}
+
+body {
+  margin: 0 17%;
+  background: linear-gradient(to right, #828282, #e3e3e3, #828282);
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* link */
