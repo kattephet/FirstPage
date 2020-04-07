@@ -72,17 +72,18 @@ h2 {
   text-align: right;
 }
 
+.instagram {
+  padding-right: 10px;
+}
+
 .menu-top li {
-  display: inline-table;
+  display: inline;
   list-style-type: none;
+  padding: 8px 7px 7px 7px;
+  transition: background-color .5s;
 }
 
-.menu-top-link {
-    padding: 7px 3px 7px 7px;
-    transition: background-color .5s;
-}
-
-.menu-top-link:hover {
+.menu-top li:hover {
     background-color: #ffab47;
 }
 
