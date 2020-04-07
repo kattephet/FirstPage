@@ -66,20 +66,20 @@ h2 {
 
 .menu-top {
   background-color: #ec8c1a;
-  padding: 10px 2%;
+  padding: 0px 1.5%;
   font-family: 'gilroy-extrabold', Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   text-align: right;
 }
 
 .instagram {
-  padding-right: 10px;
+  padding-right: 1.5%;
 }
 
 .menu-top li {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
-  padding: 8px 7px 7px 7px;
+  padding: 13px 8px;
   transition: background-color .5s;
 }
 
