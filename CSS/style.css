@@ -52,7 +52,6 @@ h2 {
 h2 {
   font-size: 1.8rem;
   margin: 0;
-  padding: 0px 0px 10px 10px;
   color: white;
   -webkit-text-stroke-width: 0.75px;
   -webkit-text-stroke-color: black;
@@ -72,12 +71,18 @@ h2 {
   text-align: right;
 }
 
+.fb,
+.instagram,
+.menu-top li,
+.container {
+  display: inline-block;
+}
+
 .instagram {
   padding-right: 1.5%;
 }
 
 .menu-top li {
-  display: inline-block;
   list-style-type: none;
   padding: 13px 8px;
   transition: background-color .5s;
@@ -241,8 +246,44 @@ h2 {
   }
 }
 
-@media (max-width: 720px) {
-  .secondary-link,
-  .images-link {
-  margin-left: 33%;
+@media (max-width: 769px) {
+
+  h2 {
+    font-size: 1.3rem;
+}
+
+.primary,
+.secondary,
+.images {
+  background: linear-gradient(#ec8c1a 54px, white 1px , transparent 170%),
+              grey url('../images/tlo-service.jpg') no-repeat center;
+}
+
+  .menu-top li {
+    display: list-item;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 1.15rem;
+  }
+
+  .container {
+    display: list-item;
+    list-style-type: none;
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .menu-top {
+    padding 0 ;
+  }
+
+  .fb,
+  .instagram {
+    padding: 3px 3px 0 0;
+    margin: auto;
+  }
+
+  .main-footer-contact a {
+    margin: 0 10px;
+  }
 }
